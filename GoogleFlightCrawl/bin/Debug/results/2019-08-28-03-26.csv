@@ -1,0 +1,22 @@
+DatePosted,Origin,OriginAirport,Destination,DestinationAirport,RegularPrice,SalePrice,DiscountRate,FlightDate,BookingLink
+2019-08-28-03-27,Boston,BOS,Paris,CDG,609,348,57.14,"Sat, 7 Dec - Fri, 13 Dec",https://www.google.com/flights#flt=BOS./m/05qtj.2019-12-07*/m/05qtj.BOS.2019-12-13;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-27,Boston,BOS,Madrid,MAD,498,243,48.80,"Mon, 14 Oct - Wed, 23 Oct",https://www.google.com/flights#flt=BOS./m/056_y.2019-10-14*/m/056_y.BOS.2019-10-23;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-27,Boston,BOS,Nice,NCE,939,432,46.01,"Fri, 6 Dec - Thu, 12 Dec",https://www.google.com/flights#flt=BOS./m/0cp6w.2019-12-06*/m/0cp6w.BOS.2019-12-12;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-28,Boston,BOS,Santorini,JTR,1386,628,45.31,"Sat, 26 Oct - Sun, 3 Nov",https://www.google.com/flights#flt=BOS./m/070t9.2019-10-26*/m/070t9.BOS.2019-11-03;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-28,Boston,BOS,Vienna,VIE,656,381,58.08,"Mon, 14 Oct - Tue, 22 Oct",https://www.google.com/flights#flt=BOS./m/0fhp9.2019-10-14*/m/0fhp9.BOS.2019-10-22;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-28,Boston,BOS,Budapest,BUD,662,378,57.10,"Mon, 21 Oct - Wed, 30 Oct",https://www.google.com/flights#flt=BOS./m/095w_.2019-10-21*/m/095w_.BOS.2019-10-30;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-28,Boston,BOS,Naples,NAP,641,434,67.71,"Thu, 9 Jan - Fri, 17 Jan",https://www.google.com/flights#flt=BOS./m/0fhsz.2020-01-09*/m/0fhsz.BOS.2020-01-17;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-29,Boston,BOS,Warsaw,WAW,731,421,57.59,"Thu, 24 Oct - Fri, 1 Nov",https://www.google.com/flights#flt=BOS./m/081m_.2019-10-24*/m/081m_.BOS.2019-11-01;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-29,Boston,BOS,Manchester,MAN,549,378,68.85,"Thu, 7 Nov - Fri, 15 Nov",https://www.google.com/flights#flt=BOS./m/052bw.2019-11-07*/m/052bw.BOS.2019-11-15;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-29,Boston,BOS,Casablanca,CMN,909,628,69.09,"Mon, 30 Dec - Wed, 8 Jan",https://www.google.com/flights#flt=BOS./m/022b_.2019-12-30*/m/022b_.BOS.2020-01-08;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-29,Boston,BOS,Lyon,LYS,944,432,45.76,"Fri, 6 Dec - Thu, 12 Dec",https://www.google.com/flights#flt=BOS./m/0dprg.2019-12-06*/m/0dprg.BOS.2019-12-12;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-30,Chicago,MDW,Madrid,MAD,1159,492,42.45,"Sun, 1 Dec - Tue, 10 Dec",https://www.google.com/flights#flt=MDW./m/056_y.2019-12-01*/m/056_y.MDW.2019-12-10;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-30,Chicago,MDW,Barcelona,BCN,1278,318,24.88,"Sun, 13 Oct - Mon, 21 Oct",https://www.google.com/flights#flt=MDW./m/01f62.2019-10-13*/m/01f62.MDW.2019-10-21;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-30,Chicago,MDW,London,LHR,570,388,68.07,"Mon, 30 Sep - Wed, 9 Oct",https://www.google.com/flights#flt=MDW./m/04jpl.2019-09-30*/m/04jpl.MDW.2019-10-09;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-31,Chicago,MDW,Lisbon,LIS,1199,509,42.45,"Mon, 9 Dec - Tue, 17 Dec",https://www.google.com/flights#flt=MDW./m/04llb.2019-12-09*/m/04llb.MDW.2019-12-17;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-31,Chicago,MDW,Dublin,DUB,714,443,62.04,"Mon, 7 Oct - Wed, 16 Oct",https://www.google.com/flights#flt=MDW./m/02cft.2019-10-07*/m/02cft.MDW.2019-10-16;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-31,Chicago,MDW,Venice,VCE,948,638,67.30,"Mon, 21 Oct - Tue, 29 Oct",https://www.google.com/flights#flt=MDW./m/07_pf.2019-10-21*/m/07_pf.MDW.2019-10-29;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-31,Chicago,MDW,Manchester,MAN,976,545,55.84,"Mon, 30 Dec - Wed, 8 Jan",https://www.google.com/flights#flt=MDW./m/052bw.2019-12-30*/m/052bw.MDW.2020-01-08;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-32,Chicago,MDW,Prague,PRG,1225,534,43.59,"Sun, 29 Sep - Tue, 8 Oct",https://www.google.com/flights#flt=MDW./m/05ywg.2019-09-29*/m/05ywg.MDW.2019-10-08;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-32,Chicago,MDW,Ibiza,IBZ,1130,607,53.72,"Sun, 15 Dec - Tue, 24 Dec",https://www.google.com/flights#flt=MDW./m/021n7_.2019-12-15*/m/021n7_.MDW.2019-12-24;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-28-03-32,Chicago,MDW,Málaga,AGP,761,481,63.21,"Sun, 24 Nov - Mon, 2 Dec",https://www.google.com/flights#flt=MDW./m/01978d.2019-11-24*/m/01978d.MDW.2019-12-02;c:USD;e:1;p:65000.2.USD;sd:1;t:f

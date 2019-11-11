@@ -1,0 +1,22 @@
+DatePosted,Origin,OriginAirport,Destination,DestinationAirport,RegularPrice,SalePrice,DiscountRate,FlightDate,BookingLink
+2019-08-27,Atlanta,ATL,Paris,CDG,822,488,59.37,"Sat, 26 Oct - Mon, 4 Nov",https://www.google.com/flights#flt=ATL./m/05qtj.2019-10-26*/m/05qtj.ATL.2019-11-04;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Rome,FCO,719,503,69.96,"Fri, 8 Nov - Sun, 17 Nov",https://www.google.com/flights#flt=ATL./m/06c62.2019-11-08*/m/06c62.ATL.2019-11-17;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Lisbon,LIS,1085,529,48.76,"Sun, 8 Dec - Sun, 15 Dec",https://www.google.com/flights#flt=ATL./m/04llb.2019-12-08*/m/04llb.ATL.2019-12-15;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Munich,MUC,818,535,65.40,"Fri, 1 Nov - Sun, 10 Nov",https://www.google.com/flights#flt=ATL./m/02h6_6p.2019-11-01*/m/02h6_6p.ATL.2019-11-10;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Vienna,VIE,1299,646,49.73,"Mon, 2 Dec - Sun, 8 Dec",https://www.google.com/flights#flt=ATL./m/0fhp9.2019-12-02*/m/0fhp9.ATL.2019-12-08;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Florence,FLR,746,509,68.23,"Sat, 11 Jan - Sun, 19 Jan",https://www.google.com/flights#flt=ATL./m/031y2.2020-01-11*/m/031y2.ATL.2020-01-19;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Brussels,BRU,800,489,61.13,"Fri, 8 Nov - Sat, 16 Nov",https://www.google.com/flights#flt=ATL./m/02rnbv.2019-11-08*/m/02rnbv.ATL.2019-11-16;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Naples,NAP,794,504,63.48,"Fri, 17 Jan - Fri, 24 Jan",https://www.google.com/flights#flt=ATL./m/0fhsz.2020-01-17*/m/0fhsz.ATL.2020-01-24;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Nairobi,NBO,955,636,66.60,"Sun, 10 Nov - Mon, 18 Nov",https://www.google.com/flights#flt=ATL./m/05d49.2019-11-10*/m/05d49.ATL.2019-11-18;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Zagreb,ZAG,1099,571,51.96,"Sat, 30 Nov - Fri, 6 Dec",https://www.google.com/flights#flt=ATL./m/0fhzy.2019-11-30*/m/0fhzy.ATL.2019-12-06;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Warsaw,WAW,1092,552,50.55,"Thu, 28 Nov - Fri, 6 Dec",https://www.google.com/flights#flt=ATL./m/081m_.2019-11-28*/m/081m_.ATL.2019-12-06;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Malta,MLA,799,553,69.21,"Sat, 18 Jan - Fri, 24 Jan",https://www.google.com/flights#flt=ATL./m/04v3q.2020-01-18*/m/04v3q.ATL.2020-01-24;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Genoa,GOA,1631,574,35.19,"Sat, 7 Dec - Sat, 14 Dec",https://www.google.com/flights#flt=ATL./m/0hknf.2019-12-07*/m/0hknf.ATL.2019-12-14;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Pisa,PSA,748,512,68.45,"Fri, 24 Jan - Sat, 1 Feb",https://www.google.com/flights#flt=ATL./m/064xp.2020-01-24*/m/064xp.ATL.2020-02-01;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Bucharest,OTP,946,560,59.20,"Fri, 29 Nov - Thu, 5 Dec",https://www.google.com/flights#flt=ATL./m/096gm.2019-11-29*/m/096gm.ATL.2019-12-05;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Ljubljana,LJU,1090,577,52.94,"Fri, 15 Nov - Thu, 21 Nov",https://www.google.com/flights#flt=ATL./m/0bmm4.2019-11-15*/m/0bmm4.ATL.2019-11-21;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Lyon,LYS,975,516,52.92,"Fri, 15 Nov - Sun, 24 Nov",https://www.google.com/flights#flt=ATL./m/0dprg.2019-11-15*/m/0dprg.ATL.2019-11-24;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Bologna,BLQ,737,511,69.34,"Sun, 19 Jan - Tue, 28 Jan",https://www.google.com/flights#flt=ATL./m/096g3.2020-01-19*/m/096g3.ATL.2020-01-28;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Bordeaux,BOD,1062,599,56.40,"Mon, 4 Nov - Tue, 12 Nov",https://www.google.com/flights#flt=ATL./m/01b85.2019-11-04*/m/01b85.ATL.2019-11-12;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Catania,CTA,922,641,69.52,"Fri, 31 Jan - Fri, 7 Feb",https://www.google.com/flights#flt=ATL./m/0c630.2020-01-31*/m/0c630.ATL.2020-02-07;c:USD;e:1;p:65000.2.USD;sd:1;t:f
+2019-08-27,Atlanta,ATL,Larnaca,LCA,1342,569,42.40,"Mon, 18 Nov - Tue, 26 Nov",https://www.google.com/flights#flt=ATL./m/01q7yl.2019-11-18*/m/01q7yl.ATL.2019-11-26;c:USD;e:1;p:65000.2.USD;sd:1;t:f
