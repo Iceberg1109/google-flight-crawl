@@ -4395,6 +4395,20 @@
             <param name="assignments">The member assignments that will be assigned to the created instance.</param>
             <returns>A <see cref="T:System.Linq.Expressions.BlockExpression"/> representing the instance creation and assignments.</returns>
         </member>
+        <member name="M:CsvHelper.Expressions.ExpressionManager.CreateTypeConverterExpression(CsvHelper.Configuration.MemberMap,System.Linq.Expressions.Expression)">
+            <summary>
+            Creates an expression that converts the field expression using a type converter.
+            </summary>
+            <param name="memberMap">The mapping for the member.</param>
+            <param name="fieldExpression">The field expression.</param>
+        </member>
+        <member name="M:CsvHelper.Expressions.ExpressionManager.CreateDefaultExpression(CsvHelper.Configuration.MemberMap,System.Linq.Expressions.Expression)">
+            <summary>
+            Creates an default expression if field expression is empty.
+            </summary>
+            <param name="memberMap">The mapping for the member.</param>
+            <param name="fieldExpression">The field expression.</param>
+        </member>
         <member name="T:CsvHelper.Expressions.ObjectRecordCreator">
             <summary>
             Creates objects.
@@ -6198,6 +6212,15 @@
             <param name="property">The property to search.</param>
             <param name="flags">Flags for how the property is retrieved.</param>
         </member>
+        <member name="M:CsvHelper.ReflectionHelper.GetUniqueProperties(System.Type,System.Reflection.BindingFlags,System.Boolean)">
+            <summary>
+            Walk up the inheritance tree collecting properties. This will get a unique set or properties in the
+            case where parents have the same property names as children.
+            </summary>
+            <param name="type">The <see cref="T:System.Type"/> to get properties for.</param>
+            <param name="flags">The flags for getting the properties.</param>
+            <param name="overwrite">If true, parent class properties that are hidden by `new` child properties will be overwritten.</param>
+        </member>
         <member name="M:CsvHelper.ReflectionHelper.GetMember``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})">
             <summary>
             Gets the property from the expression.
@@ -6222,6 +6245,29 @@
             </summary>
         </member>
         <member name="M:CsvHelper.TypeConversion.ArrayConverter.ConvertFromString(System.String,CsvHelper.IReaderRow,CsvHelper.Configuration.MemberMapData)">
+            <summary>
+            Converts the string to an object.
+            </summary>
+            <param name="text">The string to convert to an object.</param>
+            <param name="row">The <see cref="T:CsvHelper.IReaderRow"/> for the current record.</param>
+            <param name="memberMapData">The <see cref="T:CsvHelper.Configuration.MemberMapData"/> for the member being created.</param>
+            <returns>The object created from the string.</returns>
+        </member>
+        <member name="T:CsvHelper.TypeConversion.BigIntegerConverter">
+            <summary>
+            Converts a <see cref="T:System.Numerics.BigInteger"/> to and from a <see cref="T:System.String"/>.
+            </summary>
+        </member>
+        <member name="M:CsvHelper.TypeConversion.BigIntegerConverter.ConvertToString(System.Object,CsvHelper.IWriterRow,CsvHelper.Configuration.MemberMapData)">
+            <summary>
+            Converts the object to a string.
+            </summary>
+            <param name="value">The object to convert to a string.</param>
+            <param name="row">The <see cref="T:CsvHelper.IWriterRow"/> for the current record.</param>
+            <param name="memberMapData">The <see cref="T:CsvHelper.Configuration.MemberMapData"/> for the member being written.</param>
+            <returns>The string representation of the object.</returns>
+        </member>
+        <member name="M:CsvHelper.TypeConversion.BigIntegerConverter.ConvertFromString(System.String,CsvHelper.IReaderRow,CsvHelper.Configuration.MemberMapData)">
             <summary>
             Converts the string to an object.
             </summary>
@@ -6414,6 +6460,15 @@
             <summary>
             Converts a <see cref="T:System.Double"/> to and from a <see cref="T:System.String"/>.
             </summary>
+        </member>
+        <member name="M:CsvHelper.TypeConversion.DoubleConverter.ConvertToString(System.Object,CsvHelper.IWriterRow,CsvHelper.Configuration.MemberMapData)">
+            <summary>
+            Converts the object to a string.
+            </summary>
+            <param name="value">The object to convert to a string.</param>
+            <param name="row">The <see cref="T:CsvHelper.IWriterRow"/> for the current record.</param>
+            <param name="memberMapData">The <see cref="T:CsvHelper.Configuration.MemberMapData"/> for the member being written.</param>
+            <returns>The string representation of the object.</returns>
         </member>
         <member name="M:CsvHelper.TypeConversion.DoubleConverter.ConvertFromString(System.String,CsvHelper.IReaderRow,CsvHelper.Configuration.MemberMapData)">
             <summary>
@@ -6697,6 +6752,15 @@
             Converts a <see cref="T:System.Single"/> to and from a <see cref="T:System.String"/>.
             </summary>
         </member>
+        <member name="M:CsvHelper.TypeConversion.SingleConverter.ConvertToString(System.Object,CsvHelper.IWriterRow,CsvHelper.Configuration.MemberMapData)">
+            <summary>
+            Converts the object to a string.
+            </summary>
+            <param name="value">The object to convert to a string.</param>
+            <param name="row">The <see cref="T:CsvHelper.IWriterRow"/> for the current record.</param>
+            <param name="memberMapData">The <see cref="T:CsvHelper.Configuration.MemberMapData"/> for the member being written.</param>
+            <returns>The string representation of the object.</returns>
+        </member>
         <member name="M:CsvHelper.TypeConversion.SingleConverter.ConvertFromString(System.String,CsvHelper.IReaderRow,CsvHelper.Configuration.MemberMapData)">
             <summary>
             Converts the string to an object.
@@ -6733,6 +6797,32 @@
             <param name="row">The <see cref="T:CsvHelper.IReaderRow"/> for the current record.</param>
             <param name="memberMapData">The <see cref="T:CsvHelper.Configuration.MemberMapData"/> for the member being created.</param>
             <returns>The object created from the string.</returns>
+        </member>
+        <member name="T:CsvHelper.TypeConversion.TypeConverter">
+            <summary>
+            Throws an exception when used. This is here so that it's apparent
+            that there is no support for <see cref="T:System.Type"/> type conversion. A custom
+            converter will need to be created to have a field convert to and
+            from <see cref="T:System.Type"/>.
+            </summary>
+        </member>
+        <member name="M:CsvHelper.TypeConversion.TypeConverter.ConvertFromString(System.String,CsvHelper.IReaderRow,CsvHelper.Configuration.MemberMapData)">
+            <summary>
+            Throws an exception.
+            </summary>
+            <param name="text">The string to convert to an object.</param>
+            <param name="row">The <see cref="T:CsvHelper.IReaderRow"/> for the current record.</param>
+            <param name="memberMapData">The <see cref="T:CsvHelper.Configuration.MemberMapData"/> for the member being created.</param>
+            <returns>The object created from the string.</returns>
+        </member>
+        <member name="M:CsvHelper.TypeConversion.TypeConverter.ConvertToString(System.Object,CsvHelper.IWriterRow,CsvHelper.Configuration.MemberMapData)">
+            <summary>
+            Throws an exception.
+            </summary>
+            <param name="value">The object to convert to a string.</param>
+            <param name="row">The <see cref="T:CsvHelper.IWriterRow"/> for the current record.</param>
+            <param name="memberMapData">The <see cref="T:CsvHelper.Configuration.MemberMapData"/> for the member being written.</param>
+            <returns>The string representation of the object.</returns>
         </member>
         <member name="T:CsvHelper.TypeConversion.TypeConverterCache">
             <summary>

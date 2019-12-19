@@ -32,9 +32,9 @@ E:\Bots\Past Works\Google Flight Crawl\GoogleFlightCrawl_newtab\GoogleFlightCraw
 E:\Bots\Past Works\Google Flight Crawl\GoogleFlightCrawl_newtab\GoogleFlightCrawl\bin\Release\CsvHelper.dll
 E:\Bots\Past Works\Google Flight Crawl\GoogleFlightCrawl_newtab\GoogleFlightCrawl\bin\Release\System.ValueTuple.dll
 E:\Bots\Past Works\Google Flight Crawl\GoogleFlightCrawl_newtab\GoogleFlightCrawl\bin\Release\WebDriver.dll
+E:\Bots\Past Works\Google Flight Crawl\GoogleFlightCrawl_newtab\GoogleFlightCrawl\bin\Release\CsvHelper.xml
 E:\Bots\Past Works\Google Flight Crawl\GoogleFlightCrawl_newtab\GoogleFlightCrawl\bin\Release\System.ValueTuple.xml
 E:\Bots\Past Works\Google Flight Crawl\GoogleFlightCrawl_newtab\GoogleFlightCrawl\bin\Release\WebDriver.xml
-E:\Bots\Past Works\Google Flight Crawl\GoogleFlightCrawl_newtab\GoogleFlightCrawl\obj\Release\GoogleFlightCrawl.csprojAssemblyReference.cache
 E:\Bots\Past Works\Google Flight Crawl\GoogleFlightCrawl_newtab\GoogleFlightCrawl\obj\Release\GoogleFlightCrawl.csproj.CoreCompileInputs.cache
 E:\Bots\Past Works\Google Flight Crawl\GoogleFlightCrawl_newtab\GoogleFlightCrawl\obj\Release\GoogleFlightCrawl.csproj.CopyComplete
 E:\Bots\Past Works\Google Flight Crawl\GoogleFlightCrawl_newtab\GoogleFlightCrawl\obj\Release\GoogleFlightCrawl.exe

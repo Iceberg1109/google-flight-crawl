@@ -1,9 +1,3 @@
 Link,Origin,Airport
-https://www.google.com/flights#flt=ATL..2019-09-06*.ATL.2019-09-10;c:USD;e:1;ls:1w;p:65000.2.USD;sd:0;er:-409385198.-380131891.708626437.-1617631891;t:e,Atlanta,ATL
-https://www.google.com/flights#flt=BWI..2019-09-06*.BWI.2019-09-10;c:USD;e:1;ls:1w;p:65000.2.USD;sd:0;er:-422819512.-275822572.702647535.-1513322572;t:e,Baltimore,BWI
-https://www.google.com/flights#flt=BOS..2019-09-06*.BWI.2019-09-10;c:USD;e:1;ls:1w;p:65000.2.USD;sd:0;er:-422819512.-275822572.702647535.-1513322572;t:e,Boston,BOS
-https://www.google.com/flights#flt=CLT..2019-09-06*.BWI.2019-09-10;c:USD;e:1;ls:1w;p:65000.2.USD;sd:0;er:-422819512.-275822572.702647535.-1513322572;t:e,Charlotte,CLT
-https://www.google.com/flights#flt=ORD..2019-09-06*.BWI.2019-09-10;c:USD;e:1;ls:1w;p:65000.2.USD;sd:0;er:-422819512.-275822572.702647535.-1513322572;t:e,Chicago,ORD
-https://www.google.com/flights#flt=MDW..2019-09-06*.BWI.2019-09-10;c:USD;e:1;ls:1w;p:65000.2.USD;sd:0;er:-422819512.-275822572.702647535.-1513322572;t:e,Chicago,MDW
-https://www.google.com/flights#flt=CVG..2019-09-06*.BWI.2019-09-10;c:USD;e:1;ls:1w;p:65000.2.USD;sd:0;er:-422819512.-275822572.702647535.-1513322572;t:e,Cincinnati,CVG
-https://www.google.com/flights#flt=CLE..2019-09-06*.BWI.2019-09-10;c:USD;e:1;ls:1w;p:65000.2.USD;sd:0;er:-422819512.-275822572.702647535.-1513322572;t:e,Cleveland,CLE
+https://www.google.com/travel/explore?curr=USD&gl=us&hl=en&authuser=0&origin=https%3A%2F%2Fwww.google.com&tfc=cg0KCQoHCgNBVEwQACAAcg0SCQoHCgNBVEwQACAAGAEqAhACkAEAMAE6AggB&mvb=ChIJDlqSSiyaUEARkJAxS7jBYMASEgmFFPlLCSRIwBGAhIxZwl04wA,Atlanta,ATL
+https://www.google.com/travel/explore?curr=USD&gl=us&hl=en&authuser=0&origin=https%3A%2F%2Fwww.google.com&tfc=cg0KCQoHCgNCV0kQACAAcg0SCQoHCgNCV0kQACAAGAEqAhACkAEAMAE6AggB&mvb=ChIJh_zEVkG1UEARfGIqVnnPYMASEgmxP2xdkchHwBHgE1Oxyss4wA,Baltimore,BWI

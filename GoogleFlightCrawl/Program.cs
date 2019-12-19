@@ -80,7 +80,7 @@ namespace GoogleFlightCrawl
                                         try
                                         {
                                             string path = "(//span[text() = 'Great value'])[" + index + "]//..//..//div";
-                                            discountprice = int.Parse(SearchDriver.FindElement(By.XPath(path)).Text.Split(' ')[0].Replace("$", ""), NumberStyles.AllowThousands);
+                                            discountprice = int.Parse(SearchDriver.FindElement(By.XPath(path)).Text.Split(' ')[0].Split('$')[1], NumberStyles.AllowThousands);
                                             saleprice = int.Parse(SearchDriver.FindElements(By.XPath("(//span[text() = 'Great value'])[" + index + "]//..//span"))[1].Text.Replace("$", ""), NumberStyles.AllowThousands);
                                         }
                                         catch (Exception ex)
@@ -116,20 +116,31 @@ namespace GoogleFlightCrawl
                                         }
                                         attempt++;
                                     }
-                                    information.Destination = SearchDriver.FindElement(By.XPath("//h3[@class='flt-headline2']")).Text;
+                                    
+                                    try
+                                    {
+                                        information.Destination = SearchDriver.FindElement(By.XPath("//h3[@class='GDWaad tD82ud']")).Text;
+                                    }
+                                    catch (Exception ex)
+                                    {
 
-                                    Flight_Detail detail = GetInfo(SearchDriver, index);
+                                    }
+                                    
+                                    
+                                    // var ele1 = SearchDriver.FindElement(By.XPath("//div[@class='ZAKz5d']//a"));
+                                    // string link = ele1.GetAttribute("href");
+                                    Flight_Detail detail = GetInfo_a(SearchDriver);
                                     information.DestinationAirport = detail.DestAirport;
                                     information.FlightDate = detail.FlightDate;
                                     information.BookingLink = detail.BookingLink;
                                     information.DatePosted = DateTime.Now.ToString("yyyy-MM-dd-HH-mm");
                                     // save information
                                     m_results.Add(information);
-
                                     // Back to results
+                                    
                                     try
                                     {
-                                        SearchDriver.FindElement(By.XPath("//floating-action-button[@title='Close']")).Click();
+                                        SearchDriver.FindElement(By.XPath("//button[@class='VfPpkd-BIzmGd OmoSvb OoEosd VfPpkd-BIzmGd-OWXEXe-yolsp']")).Click();
                                         Thread.Sleep(500);
                                     }
                                     catch (Exception ex)
@@ -139,11 +150,8 @@ namespace GoogleFlightCrawl
                                             SearchDriver.Navigate().Back();
                                             Thread.Sleep(1000);
                                         }
-                                        else
-                                        {
-                                            
-                                        }
                                     }
+                                    
                                 }
                                 catch (Exception ex)
                                 {
@@ -151,7 +159,6 @@ namespace GoogleFlightCrawl
                                 }
                             }
                         }
-
                     }
                     catch (Exception ex)
                     {
@@ -169,25 +176,99 @@ namespace GoogleFlightCrawl
             }
         }
         static private readonly Mutex m = new Mutex();
-        static private Flight_Detail GetInfo(IWebDriver driver, int index)
+        static private Flight_Detail GetInfo_a(IWebDriver driver)
         {
             Flight_Detail detail = new Flight_Detail();
 
             try
             {
+                var view_btn = driver.FindElement(By.XPath("//div[@class='ZAKz5d']//a"));
+                var view_link = view_btn.GetAttribute("href");
+                
+                new CWebBrowser().NewTabWithUrl(driver, view_link);
+                Thread.Sleep(5000);
+                
+                try
+                {
+                    // Get Departing flights
+                    try
+                    {
+                        var destairport = driver.FindElement(By.XPath("//div[@class='gws-flights-results__airports flt-caption']"));
+                        detail.DestAirport = destairport.Text.Split('–')[1];
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+
+                    // Get Departing flights Date
+                    try
+                    {
+                        var dates = driver.FindElements(By.XPath("//span[@class='gws-flights-form__date-content']"));
+                        detail.FlightDate = dates[0].Text + " - " + dates[1].Text;
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                    detail.BookingLink = driver.Url;
+                }
+                catch (Exception ex)
+                {
+                    //Console.Write(ex.ToString());
+                }
+
+                new CWebBrowser().CloseLastTab(driver);
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return detail;
+        }
+
+        static private Flight_Detail GetInfo_hairline(IWebDriver driver, int index)
+        {
+            Flight_Detail detail = new Flight_Detail();
+
+
+            try
+            {
                 new CWebBrowser().NewTabWithUrl(driver, driver.Url);
                 Thread.Sleep(5000);
-
-                try
+                int attempt = 0;
+                while (attempt < 3)
                 {
                     var ele = driver.FindElement(By.XPath("(//span[text() = 'Great value'])[" + index + "]//..//..//..//..//.."));
                     Actions actions = new Actions(driver);
                     actions.MoveToElement(ele);
                     actions.Perform();
                     Thread.Sleep(1000);
-                    ele.Click();
+
+                    try
+                    {
+                        ele.Click();
+                        Thread.Sleep(1000);
+                        break;
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                    attempt++;
+                }
+                while(true) { 
+                try
+                {
+                   /* var ele = driver.FindElement(By.XPath("//hairline-button[@class='yDhrce CpMx2b LZHEY flt-subhead2 RQn3j']"));
+                    Actions actions = new Actions(driver);
+                    actions.MoveToElement(ele);
+                    actions.Perform();
                     Thread.Sleep(1000);
-                    
+                    ele.Click();
+                    Thread.Sleep(1000);*/
+
                     driver.FindElement(By.XPath("//hairline-button[@data-flt-ve='view_flights']")).Click();
                     Thread.Sleep(2000);
 
@@ -199,7 +280,7 @@ namespace GoogleFlightCrawl
                     }
                     catch (Exception ex)
                     {
-                        
+
                     }
 
                     // Get Departing flights Date
@@ -210,7 +291,7 @@ namespace GoogleFlightCrawl
                     }
                     catch (Exception ex)
                     {
-                        
+
                     }
                     detail.BookingLink = driver.Url;
                 }
@@ -218,15 +299,18 @@ namespace GoogleFlightCrawl
                 {
                     //Console.Write(ex.ToString());
                 }
-                
+            }
+
                 new CWebBrowser().CloseLastTab(driver);
             }
             catch (Exception ex)
             {
-                
+
             }
+            
             return detail;
         }
+
         static public void email_send()
         {
             var setting = File.ReadAllLines("setting.txt");
